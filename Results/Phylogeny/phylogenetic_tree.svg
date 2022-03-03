@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+       	<svg height="673.3800048828125" width="1025.0633544921875"><style type="text/css"><![CDATA[.tree-selection-brush .extent {
+    fill-opacity: .05;
+    stroke: #fff;
+    shape-rendering: geometricPrecision;
+    width : 100%;
+    height : 100%;
+}
+
+.tree-scale-bar text {
+    font-family: sans-serif;
+    font: 11px Arial;
+}
+.tree-scale-bar line,
+.tree-scale-bar path {
+    fill: none;
+    stroke: black;
+    stroke-width: 0.8px;
+    shape-rendering: geometricPrecision;
+}
+.node circle,
+.node ellipse,
+.node rect {
+    fill: steelblue;
+    stroke: black;
+    stroke-width: 0.5px;
+}
+.internal-node circle,
+.internal-node ellipse,
+.internal-node rect {
+    fill: #CCC;
+    stroke: black;
+    stroke-width: 0.5px;
+}
+.node {
+    font: 11px Arial;
+}
+.node-selected {
+    fill: #f00 !important;
+}
+.node-collapsed triangle,
+.node-collapsed ellipse,
+.node-collapsed rect {
+    fill: #f00 !important;
+}
+.node-tagged {
+    fill: #00f;
+}
+.branch {
+    fill: none;
+    stroke: black;
+    stroke-width: 1.2px;
+}
+.clade {
+    fill: #1f77b4;
+    stroke: #444;
+    stroke-width: 2px;
+    opacity: 1;
+}
+.branch-selected {
+    stroke: #f00 !important;
+    stroke-width: 2px;
+}
+.branch-tagged {
+    stroke: #00f;
+    stroke-dasharray: 10, 5;
+    stroke-width: 2px;
+}
+.branch-tracer {
+    stroke: #bbb;
+    stroke-dasharray: 3, 4;
+    stroke-width: 1px;
+}
+.branch-multiple {
+    stroke-dasharray: 5, 5, 1, 5;
+    stroke-width: 3px;
+}
+.branch:hover {
+    stroke-width: 5px;
+}
+.internal-node circle:hover,
+.internal-node ellipse:hover,
+.internal-node rect:hover {
+    fill: black;
+    stroke: #CCC;
+}
+.bootstrap_values {
+    font-size: 10px;
+    background-fill: #cccccc;
+}
+
+.attribute {
+    font-size: 10px;
+    background-fill: #cccccc;
+}
+
+html,
+body, .tree-wrapper {
+    height: 100%;
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.navbar-brand {
+	color : black;
+	
+}
+
+.dropdown-toggle {
+	color : black;
+	
+}
+
+.top_bar {
+    position : relative;
+    min-width: 100%;
+    height: 50px;
+-webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+    background: #8e9eab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8e9eab , #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8e9eab , #eef2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.tree_options,
+.tree-vis {
+    position: relative;
+    display : inline-block;
+    vertical-align: top;
+
+}
+
+#bs-example-navbar-collapse-1 {
+	padding: 0;
+}
+
+.tree_options {
+    min-height : calc(100% - 50px);
+    -webkit-box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    width: 250px;
+    left : 0;
+    bottom : 0;
+background: #8e9eab; /* fallback for old browsers */
+
+}
+
+.text_tree_options_title {
+    text-align:center;
+    margin-top: 0%;
+    margin-right: 0;
+    margin-left: 25%;
+    font-size : 20px;
+    font-family : sans-serif;
+    display: inline-block;
+}
+
+.text_tree_options_content {
+    font-size : 11px;
+    font-family : sans-serif;
+    display: inline-block;
+}
+
+.tree_disposition_wrapper {
+    background-color : #eef2f3;
+    width : 90%;
+    height : 25%;
+    border-radius: 25px;
+    display: table;
+    margin: 0 auto;
+}
+
+.tree_disposition_1 {
+    display: inline-block;
+    float: left;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    vertical-align: top;
+	width : 49%;
+}
+
+
+.tree_disposition_line{
+	z-index : 1;
+	display: inline-block;
+	min-height : 170px;
+	margin-left : 0;
+	margin-top : 10px;
+	width : 0.5px;
+	margin-bottom : 10px;
+	border-style : solid;
+	border-width : thin;
+	vertical-align: top;
+}
+
+#phylotree_branch_length_1 {
+    margin-top: 50%;
+    margin-bottom: 50%;
+    font: 14px Arial;
+}
+#phylotree_branch_length_2 {
+    margin-bottom: 50%;
+    font: 14px Arial;
+}
+.tree_disposition_2 {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    vertical-align: top;
+}
+#phylotree_layout_mode_1 {
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+#phylotree_layout_mode_2 {
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
+#phylotree_layout_mode_3 {
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+.branch_filter_wrapper {
+	padding-top : 5px;
+	padding-left : 10px;
+	padding-right: 20px;
+    vertical-align: top;
+    display : inline-block;
+}
+
+.text_tree_options_search {
+    margin-top: 30%;
+    margin-right: 0;
+    margin-left: 0;
+    font-size : 18px;
+    font-family : sans-serif;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tree_ordering {
+    background-color : #eef2f3;
+    width: 90%;
+    height: 25%;
+    border-radius: 25px;
+    display: table;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
+
+#sort_ascending, #sort_descending, #sort_original {
+	margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.tree_manipulation {
+    background-color : #eef2f3;
+    width: 90%;
+    height: 25%;
+    border-radius: 25px;
+    display: table;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
+
+#display_bootstrap, #display_LB, #align-toggler {
+	margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.tree-vis {
+    height : calc(100% - 50px);
+    width: calc(100% - 255px) !important;
+}
+.tree-widget {
+    height : 100%;
+    width : 100%;
+	overflow-y: auto;
+    overflow-x: auto;
+}
+.tree_zoom {
+    right: 25px;
+    top: 10px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+
+}
+
+#expand_vert_space, #expand_hori_space{
+	
+}
+#compress_vert_space,#compress_hori_space{
+	margin-top : 10px;
+	
+}
+
+#enable_zoom, #zoom_minus, #zoom_plus {
+	margin-top : 10px;
+}
+
+.phylotree_branch_length {}
+
+.phylotree-container {
+    cursor : pointer;
+
+}
+	
+]]></style><defs></defs><g class="phylotree-container" transform="translate (42,67) scale (3)"><path class="branch" d="M125.9905793408243,144V156H138.45345966279476"><title>Length = 0.02905683</title></path><path class="branch" d="M125.9905793408243,144V132H142.1934050515052"><title>Length = 0.0377764</title></path><path class="branch" d="M118.34828886679821,126V144H125.9905793408243"><title>Length = 0.01781777</title></path><path class="branch" d="M118.34828886679821,126V108H236.00000000000003"><title>Length = 0.27430142</title></path><path class="branch" d="M146.2988752149136,72V84H148.49549806626135"><title>Length = 0.00512136</title></path><path class="branch" d="M146.2988752149136,72V60H148.72343581754066"><title>Length = 0.00565279</title></path><path class="branch" d="M111.55085168592905,99V126H118.34828886679821"><title>Length = 0.01584802</title></path><path class="branch" d="M111.55085168592905,99V72H146.2988752149136"><title>Length = 0.08101397</title></path><path class="branch" d="M0,49V99H111.55085168592905"><title>Length = 0.26007745</title></path><path class="branch" d="M0,49V36H34.90687610705468"><title>Length = 0.08138433</title></path><path class="branch" d="M0,49V12H26.747988779683233"><title>Length = 0.06236213</title></path><g transform="translate(0,49)" class="internal-node node-selected"><circle r="3"></circle></g><g transform="translate(26.747989654541016,12)" class="node"><text style="opacity: 1;" dy="3.96" dx="3.96" transform="" text-anchor="start">ERR1898727</text><text class="attribute" dx="-.6em" text-anchor="end" alignment-baseline="middle">0.06</text></g><g transform="translate(34.90687561035156,36)" class="node"><text style="opacity: 1;" dy="3.96" dx="3.96" transform="" text-anchor="start">ERR1898728</text><text class="attribute" dx="-.6em" text-anchor="end" alignment-baseline="middle">0.08</text></g><g transform="translate(111.55084991455078,99)" class="internal-node"><circle r="3"></circle><text class="attribute" dx="-.6em" text-anchor="end" alignment-baseline="middle">0.26</text></g><g transform="translate(146.2988739013672,72)" class="internal-node"><circle r="3"></circle><text class="attribute" dx="-.6em" text-anchor="end" alignment-baseline="middle">0.08</text></g><g transform="translate(148.7234344482422,60)" class="node"><text style="opacity: 1;" dy="3.96" dx="3.96" transform="" text-anchor="start">ERR1898764</text><text class="attribute" dx="-.6em" text-anchor="end" alignment-baseline="middle">0.00</text></g><g transform="translate(148.49549865722656,84)" class="node"><text style="opacity: 1;" dy="3.96" dx="3.96" transform="" text-anchor="start">ERR1898765</text><text class="attribute" dx="-.6em" text-anchor="end" alignment-baseline="middle">0.00</text></g><g transform="translate(118.3482894897461,126)" class="internal-node"><circle r="3"></circle><text class="attribute" dx="-.6em" text-anchor="end" alignment-baseline="middle">0.01</text></g><g transform="translate(236,108)" class="node"><text style="opacity: 1;" dy="3.96" dx="3.96" transform="" text-anchor="start">Tryp-B87_S2</text><text class="attribute" dx="-.6em" text-anchor="end" alignment-baseline="middle">0.27</text></g><g transform="translate(125.9905776977539,144)" class="internal-node"><circle r="3"></circle><text class="attribute" dx="-.6em" text-anchor="end" alignment-baseline="middle">0.01</text></g><g transform="translate(142.1934051513672,132)" class="node"><text style="opacity: 1;" dy="3.96" dx="3.96" transform="" text-anchor="start">ERR1898732</text><text class="attribute" dx="-.6em" text-anchor="end" alignment-baseline="middle">0.03</text></g><g transform="translate(138.45346069335938,156)" class="node"><text style="opacity: 1;" dy="3.96" dx="3.96" transform="" text-anchor="start">Tryp-T70_S4</text><text class="attribute" dx="-.6em" text-anchor="end" alignment-baseline="middle">0.02</text></g></g><g class="tree-scale-bar" transform="translate (42,57) scale (3)"><g class="tick" style="opacity: 1;" transform="translate(12,0)"><line y2="-6" x2="0"></line><text dy="0em" style="text-anchor: end;" y="-9" x="0"></text></g><g class="tick" style="opacity: 1;" transform="translate(54.891397038047344,0)"><line y2="-6" x2="0"></line><text dy="0em" style="text-anchor: end;" y="-9" x="0">0.10</text></g><g class="tick" style="opacity: 1;" transform="translate(97.78279407609469,0)"><line y2="-6" x2="0"></line><text dy="0em" style="text-anchor: end;" y="-9" x="0">0.20</text></g><g class="tick" style="opacity: 1;" transform="translate(140.67419111414202,0)"><line y2="-6" x2="0"></line><text dy="0em" style="text-anchor: end;" y="-9" x="0">0.30</text></g><g class="tick" style="opacity: 1;" transform="translate(183.56558815218938,0)"><line y2="-6" x2="0"></line><text dy="0em" style="text-anchor: end;" y="-9" x="0">0.40</text></g><g class="tick" style="opacity: 1;" transform="translate(226.4569851902367,0)"><line y2="-6" x2="0"></line><text dy="0em" style="text-anchor: end;" y="-9" x="0">0.50</text></g><path class="domain" d="M12,-6V0H248V-6"></path></g></svg>
